@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    tools:background="@color/colorBackgroundDark">
+
+    <com.loopeer.shadow.ShadowView
+        app:shadowMarginTop="8dp"
+        app:shadowMarginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shadowColor="@color/colorShadow"
+        app:cornerRadius="0dp"
+        app:shadowRadius="2dp"
+        app:backgroundColor="@color/colorCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="课程信息"
+                android:textColor="@color/colorTextSecondly"/>
+
+            <com.daijie.ksyllabusapp.widgets.LineEditLayout
+                android:id="@+id/lessonNameEditLayout"
+                app:hint="未填写"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_lesson_name"
+                app:title="课名">
+
+            </com.daijie.ksyllabusapp.widgets.LineEditLayout>
+
+
+            <include layout="@layout/view_horizontal_div"/>
+
+
+            <com.daijie.ksyllabusapp.widgets.LineEditLayout
+                android:id="@+id/lessonTeacherEditLayout"
+                app:hint="未填写"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_lesson_teacher"
+                app:title="教师">
+
+            </com.daijie.ksyllabusapp.widgets.LineEditLayout>
+
+
+            <include layout="@layout/view_horizontal_div"/>
+
+            <com.daijie.ksyllabusapp.widgets.LineEditLayout
+                android:id="@+id/lessonAddressEditLayout"
+                app:hint="未填写"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_lesson_address"
+                app:title="课室">
+
+            </com.daijie.ksyllabusapp.widgets.LineEditLayout>
+
+        </LinearLayout>
+
+    </com.loopeer.shadow.ShadowView>
+
+
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="课表功能">
+        <menu>
+            <item
+                android:id="@+id/nav_add_lesson"
+                android:icon="@drawable/ic_add_lesson"
+                android:title="添加课程"/>
+            <item
+                android:id="@+id/nav_share_lesson"
+                android:icon="@drawable/ic_add_lesson"
+                android:title="分享课程"/>
+            <item
+                android:id="@+id/nav_lesson_manager"
+                android:icon="@drawable/ic_add_lesson"
+                android:title="课程管理"/>
+
+            <item
+                android:id="@+id/nav_lesson_collection"
+                android:icon="@drawable/ic_add_lesson"
+                android:title="课表收集"/>
+
+        </menu>
+    </item>
+
+</menu>

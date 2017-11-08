@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:id="@+id/appToolbar"
+    style="@style/toolbarStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/titleTextViewStyle"/>
+
+</android.support.v7.widget.Toolbar>

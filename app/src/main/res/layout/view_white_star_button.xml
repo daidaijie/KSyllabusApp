@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.like.LikeButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/likeButton"
+    android:layout_width="@dimen/toolbarHeight"
+    android:layout_height="@dimen/toolbarHeight"
+    android:layout_gravity="bottom|right"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    app:circle_end_color="@color/material_white"
+    app:dots_primary_color="@color/material_white"
+    app:dots_secondary_color="@color/material_white"
+    app:icon_size="22dp"
+    app:icon_type="star"
+    app:like_drawable="@drawable/ic_star"
+    app:unlike_drawable="@drawable/ic_unstar">
+</com.like.LikeButton>

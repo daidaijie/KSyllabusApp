@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        tools:srcCompat="@drawable/ic_lesson_address"/>
+
+    <TextView
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        tools:text="课室"
+        android:textColor="@color/colorTextSecondly"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:id="@+id/infoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:background="@android:color/transparent"
+        tools:hint="未填写"
+        android:textSize="16sp"/>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">汕大课程表</string>
+    <!--drawer-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="error_token">令牌错误,请重新登录</string>
+    
+    
+    
+</resources>

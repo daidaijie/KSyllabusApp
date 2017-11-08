@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daijie.ksyllabusapp.widgets.SwipeRefreshScrollLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/syllabusRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/dateLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/week_grid_height"
+            android:minHeight="@dimen/week_grid_height"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/swipeRefreshScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/timeLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+                <GridLayout
+                    android:id="@+id/syllabusGridLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</com.daijie.ksyllabusapp.widgets.SwipeRefreshScrollLayout>

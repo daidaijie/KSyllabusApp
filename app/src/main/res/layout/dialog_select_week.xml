@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/weekRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp">
+
+        <CheckedTextView
+            android:id="@+id/singleWeekTextView"
+            android:layout_width="0dp"
+            android:textSize="14sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_week_type_select"
+            android:gravity="center"
+            android:text="单周"
+            android:textAlignment="gravity"
+            android:textColor="@color/color_week_select"/>
+
+        <CheckedTextView
+            android:textSize="14sp"
+            android:id="@+id/doubleWeekTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_week_type_select"
+            android:gravity="center"
+            android:text="双周"
+            android:textAlignment="gravity"
+            android:textColor="@color/color_week_select"/>
+
+        <CheckedTextView
+            android:textSize="14sp"
+            android:id="@+id/fullWeekTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_week_type_select"
+            android:gravity="center"
+            android:text="全选"
+            android:textAlignment="gravity"
+            android:textColor="@color/color_week_select"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

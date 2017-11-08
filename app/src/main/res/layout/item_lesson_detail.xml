@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.loopeer.shadow.ShadowView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lessonItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:backgroundColor="@color/colorCard"
+    android:foreground="?attr/selectableItemBackground"
+    app:cornerRadius="0dp"
+    app:shadowColor="@color/colorShadow"
+    app:shadowMarginBottom="6dp"
+    app:shadowMarginTop="6dp"
+    app:shadowRadius="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/dev_line_full"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:showDividers="middle">
+
+        <com.daijie.ksyllabusapp.widgets.LineTextLayout
+            android:id="@+id/lessonNameTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_lesson_name"
+            app:title="课名">
+        </com.daijie.ksyllabusapp.widgets.LineTextLayout>
+
+        <com.daijie.ksyllabusapp.widgets.LineTextLayout
+            android:id="@+id/lessonTeacherTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_lesson_teacher"
+            app:title="教师">
+        </com.daijie.ksyllabusapp.widgets.LineTextLayout>
+
+        <com.daijie.ksyllabusapp.widgets.LineTextLayout
+            android:id="@+id/lessonAddressTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_lesson_address"
+            app:title="教室">
+        </com.daijie.ksyllabusapp.widgets.LineTextLayout>
+
+        <com.daijie.ksyllabusapp.widgets.LineTextLayout
+            android:id="@+id/lessonTimeTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_lesson_time"
+            app:title="时间">
+        </com.daijie.ksyllabusapp.widgets.LineTextLayout>
+
+    </LinearLayout>
+</com.loopeer.shadow.ShadowView>

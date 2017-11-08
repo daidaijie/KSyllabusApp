@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+    <com.loopeer.shadow.ShadowView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        app:backgroundColor="@color/colorCard"
+        app:cornerRadius="0dp"
+        app:shadowColor="@color/colorShadow"
+        app:shadowMarginBottom="8dp"
+        app:shadowMarginTop="8dp"
+        app:shadowRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="选择指定周数和指定用户"
+                android:textColor="@color/colorTextSecondly"
+                android:textSize="14sp"/>
+
+            <com.daijie.ksyllabusapp.widgets.LineEditLayout
+                android:id="@+id/weekEditLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                app:editable="false"
+                app:hint="未选择"
+                app:icon="@drawable/ic_weeks"
+                app:title="周数">
+            </com.daijie.ksyllabusapp.widgets.LineEditLayout>
+
+            <include layout="@layout/view_horizontal_div"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/fullWeekRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="全周查看"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/everyWeekRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="逐周查看"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </com.loopeer.shadow.ShadowView>
+
+
+</LinearLayout>

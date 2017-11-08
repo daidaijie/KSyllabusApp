@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbarHeight">48dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+
+
+    <dimen name="week_grid_height">24dp</dimen>
+    <dimen name="syllabus_grid_height">44dp</dimen>
+
+    <dimen name="padding_wallpager_recyclerview">12dp</dimen>
+    <dimen name="empty_img_margin_top">160dp</dimen>
+
+
+    <dimen name="item_oa_file_height">72dp</dimen>
+    <dimen name="item_oa_info_height">88dp</dimen>
+
+
+    <!--api < 21-->
+    <dimen name="flat_card_elevation">0dp</dimen>
+
+    <!--wheelpicker-->
+    <dimen name="WheelItemTextSize">19sp</dimen>
+    <dimen name="WheelItemSpace">0dp</dimen>
+    <dimen name="WheelIndicatorSize">1.5dp</dimen>
+    <dimen name="WheelMargins">0dp</dimen>
+    <dimen name="wheel_spacing">16dp</dimen>
+
+</resources>

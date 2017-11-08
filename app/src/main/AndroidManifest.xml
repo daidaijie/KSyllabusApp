@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.daijie.ksyllabusapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.daijie.ksyllabusapp.ui.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.daijie.ksyllabusapp.ui.main.MainActivity"/>
+        <activity android:name=".ui.syllabus.main.SyllabusActivity"/>
+        <activity
+            android:name="com.daijie.ksyllabusapp.ui.addlesson.AddLessonActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.selectlesson.share.ShareLessonActivity"/>
+        <activity android:name=".ui.selectlesson.sharelist.ShareListActivity"/>
+        <activity
+            android:name=".ui.selectlesson.addshare.AddShareActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.syllabus.lesson.LessonDetailActivity"/>
+        <activity android:name=".ui.selectlesson.lessonList.LessonsListActivity"/>
+        <activity android:name=".ui.syllabus.manager.LessonsManagerActivity"/>
+        <activity android:name=".ui.selectlesson.collection.CollectionLessonActivity"/>
+        <activity android:name=".ui.selectlesson.collectionlist.CollectionListActivity"/>
+        <activity
+            android:name=".ui.selectlesson.sendsyllabus.SendSyllabusActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.selectlesson.collectiondetail.CollectionDetailActivity"/>
+        <activity android:name=".ui.selectlesson.collectionsyllabus.CollectionSyllabusActivity"/>
+        <activity android:name=".ui.selectlesson.collectionsyllabus.CollectionAccountsActivity"/>
+        <activity
+            android:name=".ui.syllabus.multilesson.MultiLessonActivity"
+            android:theme="@style/DialogStyle"/>
+        <activity
+            android:name=".ui.oa.list.OAListActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.oa.detail.OADetailActivity"/>
+        <activity android:name=".ui.dymatic.SchoolDymaticActivity"/>
+        <activity
+            android:name=".ui.dymatic.circle.detail.SchoolCircleDetailActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.dymatic.notice.detail.SchoolNoticeDetailActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.daijie.ksyllabusapp.ui.photo.PhotoPagerActivity"/>
+        <activity android:name="com.daijie.ksyllabusapp.ui.photo.PhotoPagerDeleteActivity"/>
+        <activity
+            android:name=".ui.dymatic.circle.send.SchoolCircleSendActivity"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+    </application>
+
+</manifest>

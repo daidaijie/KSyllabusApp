@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/oaItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/item_oa_file_height"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fileTypeTextView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="@color/material_white"
+        android:textSize="12sp"
+        tools:text="JPEG"/>
+
+
+    <TextView
+        android:id="@+id/fileNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@+id/downloadImageView"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2sp"
+        android:minLines="@integer/item_line"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="14sp"
+        tools:text="工学院工学院工学院工学院工学学院工学院工院工学院工学院工学院工学院工学院工学院"/>
+
+
+    <ImageView
+        android:id="@+id/downloadImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="12dp"
+        app:srcCompat="@drawable/ic_download"/>
+
+</RelativeLayout>

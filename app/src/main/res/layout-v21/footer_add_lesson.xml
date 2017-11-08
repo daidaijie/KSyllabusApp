@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addLessonTimeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="1dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:outlineProvider="bounds"
+    android:stateListAnimator="@animator/select_raise"
+    tools:targetApi="lollipop">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRecyclerView"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="添加时间"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="16sp"/>
+
+</FrameLayout>

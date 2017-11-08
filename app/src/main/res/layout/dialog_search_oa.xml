@@ -1,0 +1,44 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:theme="@style/TextInputLayoutStyle"
+        app:hintTextAppearance="@style/TextInputLayoutHint">
+
+        <EditText
+            android:id="@+id/keywordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="关键字"
+            android:singleLine="true"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="16sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <com.daijie.ksyllabusapp.widgets.TextInputSpinner
+        android:id="@+id/companyTextInputSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:hint="部门">
+
+    </com.daijie.ksyllabusapp.widgets.TextInputSpinner>
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="注意：关键字为空时\n　　　则检索该部门所有办公信息"
+        android:textColor="@color/colorTextSecondly"
+        android:textSize="14sp"/>
+
+</LinearLayout>

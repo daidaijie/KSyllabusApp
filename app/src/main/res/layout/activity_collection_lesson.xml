@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDark"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar"/>
+
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/collectionSyllabusView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="16dp"
+        app:backgroundColor="@color/colorCard"
+        app:cornerRadius="0dp"
+        app:shadowColor="@color/colorShadow"
+        app:shadowMarginBottom="8dp"
+        app:shadowMarginTop="32dp"
+        app:shadowRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收集课表"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="　　在这里，你可以创建一个课程收集，用于收集别人发送的课表。你可以根据需要，选择其中某几个人的课表进行查看。不仅如此，你还可以查看指定周数上或者每一周上，某时间上会有的人数"
+                android:textColor="@color/colorTextSecondly"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </com.loopeer.shadow.ShadowView>
+
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/sendSyllabusView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="16dp"
+        app:backgroundColor="@color/colorCard"
+        app:cornerRadius="0dp"
+        app:shadowColor="@color/colorShadow"
+        app:shadowMarginBottom="8dp"
+        app:shadowMarginTop="32dp"
+        app:shadowRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送课表"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="　　在这里，输入别人给你的代码后，选择自己需要发送的课表。由于隐私关系我们不保留课表的具体内容，只保留其时间。发送的课表中，可以选择自定义的课程。"
+                android:textColor="@color/colorTextSecondly"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+
+    </com.loopeer.shadow.ShadowView>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/functionCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:stateListAnimator="@animator/select_raise"
+    app:cardBackgroundColor="@color/colorCard"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="8dp"
+    tools:background="@color/colorBackground"
+    tools:targetApi="lollipop">
+
+    <TextView
+        android:id="@+id/functionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="16dp"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:textSize="18sp"
+        tools:drawableLeft="@drawable/ic_wifi"
+        tools:text="我的课表"/>
+
+</android.support.v7.widget.CardView>

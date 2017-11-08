@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/outerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+        android:id="@+id/multiTimeDiscreteScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:overScrollMode="never"/>
+
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+        android:id="@+id/multiLessonDiscreteScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:overScrollMode="never"/>
+
+</LinearLayout>
